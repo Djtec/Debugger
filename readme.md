@@ -9,6 +9,15 @@ Requirement
 -----------
 PHP 5.3.0
 
+Installation
+-----------
+Via composer
+```
+require: {
+    "djtec/debugger": "dev-master"
+}
+```
+
 Usage
 -----------
 ```php
