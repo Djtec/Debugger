@@ -3,7 +3,7 @@ Djtec/Debugger
 
 PHP Debugger 1.0.0
 
-![debugger](http://djtec.github.com/kint/img/demo.png)
+![debugger](http://djtec.github.com/Debugger/images/demo.png)
 
 Requirement
 -----------
