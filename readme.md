@@ -1,6 +1,9 @@
 Djtec/Debugger
 ============
 
+[![Latest Stable Version](https://poser.pugx.org/djtec/debugger/v/stable.svg)](https://packagist.org/packages/djtec/debugger)
+[![Total Downloads](https://poser.pugx.org/djtec/debugger/downloads.svg)](https://packagist.org/packages/djtec/debugger)
+
 PHP Debugger 1.0.0
 
 ![debugger](http://djtec.github.com/Debugger/images/demo.png)
@@ -14,7 +17,7 @@ Installation
 Via composer
 ```
 "require": {
-    "djtec/debugger": "dev-master"
+    "djtec/debugger": "1.0.0"
 }
 ```
 
