@@ -13,7 +13,7 @@ Installation
 -----------
 Via composer
 ```
-require: {
+"require": {
     "djtec/debugger": "dev-master"
 }
 ```

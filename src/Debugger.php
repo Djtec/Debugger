@@ -8,12 +8,22 @@ class Debugger {
     const INDENT = 4;
 
 
-    public static function run($var, $echo = false)
+    /**
+     * @param $var
+     * @param bool $css Use css in Debugger class
+     * @param bool $echo
+     * @return string
+     */
+    public static function run($var, $css = true, $echo = false)
     {
-        $trace = debug_backtrace()[1];
+        $trace = debug_backtrace()[0];
 
         $file = trim($trace['file'], '/');
         $line = $trace['line'];
+
+        if ($css) {
+            static::css();
+        }
 
         $html = '<div class="debug"><div class="header">Debug</div><pre>';
         $html .= self::var_dump_plain($var);
@@ -160,6 +170,13 @@ style="color:#999;">)</span>';
     protected static function htmlentities($string)
     {
         return htmlentities($string, ENT_QUOTES, self::mbInternalEncoding());
+    }
+
+    protected static function css()
+    {
+        $style = file_get_contents(dirname(__DIR__).'/assets/debugger.css');
+
+        echo '<style type="text/css">'.$style.'</style>';
     }
 
 }
